@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <a href="" class="logo">Logo</a>
+            <ul id="menu" >
+                <li><a href="">Home</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Fale Conosco</a></li>
+                <li><a class="active" href="">Fazer Orçamento </a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <div class="center"> 
+       
+            <h2>Destaque-se no mercado entregue as melhores soluções para seus clientes</h2>
+        </div>
+    </section>
+    <section class="conteudo">
+            {% block content %}{% endblock %}
+    </section>
+    <footer>
+        <div class="center">
+          <h4>Todos os direitos   Reservados</h4>  
+        </div>
+    </footer>
+</body>
+</html>

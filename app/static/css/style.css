@@ -1,0 +1,144 @@
+
+:root {
+   --blue-primary: #2563EB;/*Botões primários */
+--blue-primary-hover: #1D4ED8;/*Botões primários hover*/
+--green-accent: #10B981;/*Botões secundários / ícones de sucesso*/
+--amber-accent: #F59E0B;/*Alertas ou CTA especiais */
+--neutral-100: #F9FAFB;/*Background principal */
+--neutral-500: #6B7280;/*Menus e detalhes */
+--neutral-900: #111827;/*Textos principais */
+
+
+--radius: 12px;
+--glass: rgba(255,255,255,0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2%;
+}
+ul, a{
+    text-decoration: none;
+    list-style: none;
+}
+a.active{
+    border:2px solid var(--green-accent);
+    padding: 0.7rem;
+   
+}
+a.active:hover{
+    background-color: var(--green-accent);
+    color: var(--neutral-100);
+    border-bottom: 5px solid var(--amber-accent);
+        transition: all 0.3s ease-in-out;
+
+}
+header{
+    background-color: var(--neutral-900);
+    height: 80px;
+}
+header.center{
+    justify-content: space-between;
+}
+#menu{
+    display: flex;
+}
+
+#menu li {
+    padding: 1.5rem;
+    gap: 1.2rem;
+    font-size: 27px;
+    transition: all 0.5s ease-in-out;
+
+}
+li a{
+    color: white;
+     transition: all 0.3s ease-in-out;
+}
+li a:hover{
+    border-bottom:2px solid aliceblue;
+     transition: all 0.3s ease-in-out;
+}
+
+.banner{
+    padding:0 2%;
+    font-size:3rem;
+    color:var(--glass);
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+   /* background:var(--blue-gray);*/
+    background-image:url("../img/equipe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    height:90vh;
+    place-items:center;
+    place-content:center
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*Conteudo*/
+
+section.conteudo{
+    background-color:var(--neutral-100);
+    min-height:80vh;
+}
+.conteudo{
+    text-align: center;
+}
+.conteudo>.center{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.conteudo h1.titulo{
+    color:var(--neutral-900);
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.wrapper_servicos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.servico{
+    background-color: white;
+    width: 30%;
+    padding: 2rem;
+}
+
+ img{
+    max-width: 100%;
+    min-width: 300px;
+}
+
+/*Footer*/
+footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--blue-primary);
+    display: flex;
+    align-items: center;
+    color: white;
+}
